@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "name": "lyndseyduffield.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass scss -o css",
+    "scss:watch": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lyndseyduffield/lyndseyduffield.com.git"
+  },
+  "author": "Lyndsey Duffield",
+  "homepage": "https://github.com/lyndseyduffield/lyndseyduffield.com#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
