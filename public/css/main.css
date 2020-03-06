@@ -14,7 +14,7 @@
   --font-2xl: 1.875rem;
   --font-3xl: 2.25rem;
   --font-4xl: 3rem;
-  --font-5xl: 3.5rem;
+  --font-5xl: 3.2rem;
   --font-6xl: 4.5rem;
   --font-7xl: 5.75rem;
   --font-8xl: 7rem;
@@ -53,7 +53,7 @@ body {
 
 h1 {
   font-family: var(--font-title);
-  font-size: var(--font-4xl); }
+  font-size: var(--font-5xl); }
 
 h2 {
   font-family: var(--font-title);
@@ -67,6 +67,9 @@ p {
   font-size: var(--font-sm);
   line-height: var(--line-height-md);
   margin-bottom: var(--spacing-md); }
+
+a {
+  color: inherit; }
 
 /* Technology Themes */
 .javascript {
@@ -102,6 +105,18 @@ p {
     font-family: var(--font-content); }
   .nav .nav__available {
     font-family: var(--font-content); }
+    .nav .nav__available .pulse {
+      width: 8px;
+      height: 8px;
+      background-color: #659b60;
+      background-clip: padding-box;
+      border-radius: 50%;
+      display: inline-block;
+      vertical-align: middle;
+      margin-bottom: 3px;
+      margin-right: 12px;
+      box-shadow: rgba(61, 121, 56, 0.4) 0px 0px 0px;
+      animation: 2s ease 0s infinite normal none running pulseDot; }
 
 .subtitle {
   font-family: var(--font-content);
@@ -118,11 +133,12 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .technologies .technology__icon svg {
-      --icon-size: 32px;
-      width: var(--icon-size);
-      height: var(--icon-size);
-      fill: var(--technology-color); }
+    .technologies .technology__icon {
+      --icon-size: 32px; }
+      .technologies .technology__icon svg {
+        width: var(--icon-size);
+        height: var(--icon-size);
+        fill: var(--technology-color); }
     .technologies .technology__name {
       color: var(--technology-color);
       font-family: var(--technology-font); }
@@ -137,3 +153,11 @@ p {
     list-style-type: none; }
   .resume ul.list {
     padding: 0; }
+
+@keyframes pulseDot {
+  0% {
+    box-shadow: rgba(61, 121, 56, 0.4) 0px 0px 0px 0px; }
+  70% {
+    box-shadow: rgba(61, 121, 56, 0) 0px 0px 0px 10px; }
+  100% {
+    box-shadow: rgba(61, 121, 56, 0) 0px 0px 0px 0px; } }
