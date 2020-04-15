@@ -198,10 +198,10 @@ a {
       font-family: var(--technology-font); }
 
 .resume {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  justify-items: center stretch; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
   @media screen and (min-width: 750px) {
     .resume {
       display: grid;
